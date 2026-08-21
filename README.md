@@ -72,53 +72,26 @@ Baseline evidence includes:
 ![Manu Lab Network Topology](baseline-and-topology/05-manu-lab-topology.png)
 
 ---
-
 # 🔬 Experiments
 
 The project is divided into three progressive experiments.
 
-## 01 — Basic Host Discovery
+## [01 — Basic Host Discovery](https://github.com/manunair16/nmap-wireshark-network-analysis/tree/main/experiments/01-basic-host-discovery)
 
 The first experiment focuses on identifying an active host on the lab network.
 
-**Objective:**
+---
 
-* Discover the target system
-* Confirm network reachability
-* Observe the traffic generated during discovery
+## [02 — Port Scanning](https://github.com/manunair16/nmap-wireshark-network-analysis/tree/main/experiments/02-port-scanning)
 
-📁 **Experiment:**
-[`experiments/01-basic-host-discovery/`](experiments/01-basic-host-discovery/)
+The second experiment focuses on identifying TCP ports exposed by the Windows 11 target.
 
 ---
 
-## 02 — Port Scanning
+## [03 — Service Detection](https://github.com/manunair16/nmap-wireshark-network-analysis/tree/main/experiments/03-service-detection)
 
-The second experiment examines the ports exposed by the Windows 11 target.
+The third experiment builds on port scanning by examining the services associated with the discovered ports.
 
-**Objective:**
-
-* Identify open ports
-* Understand the purpose of port scanning
-* Capture and examine the related network traffic
-
-📁 **Experiment:**
-[`experiments/02-port-scanning/`](experiments/02-port-scanning/)
-
----
-
-## 03 — Service Detection
-
-The third experiment builds on port scanning by examining the services associated with discovered ports.
-
-**Objective:**
-
-* Identify services running on discovered ports
-* Compare Nmap results with captured traffic
-* Understand how service detection generates network activity
-
-📁 **Experiment:**
-[`experiments/03-service-detection/`](experiments/03-service-detection/)
 
 ---
 
@@ -140,9 +113,9 @@ Packet Analysis
 Compare Results
 ```
 
-**Nmap** provides the scan results.
+Nmap provides the scan results.
 
-**Wireshark** provides packet-level visibility into the traffic generated during the scan.
+Wireshark provides packet-level visibility into the traffic generated during the scan.
 
 Using both tools provides a better understanding of what happens on the network instead of relying only on the final Nmap output.
 
@@ -150,17 +123,17 @@ Using both tools provides a better understanding of what happens on the network 
 
 # 🤝 Collaboration
 
-The project was completed using **individual lab environments**.
+The project was completed using individual lab environments.
 
 The three participants are:
 
 * 👨‍💻 [Hari Krishnan R K](https://github.com/harikrishnan-rk)
 * 👨‍💻 [Manu P Nair](https://github.com/manunair16)
-* 👨‍💻 [Varun M Nair](https://github.com/varunmnair95)
+* 👨‍💻 [Varun M Nair](https://github.com/varunmnair95/)
 
 Each participant maintains a separate repository and lab setup.
 
-Collaboration may include:
+Collaboration included:
 
 * Sharing approaches
 * Discussing observations
@@ -168,6 +141,12 @@ Collaboration may include:
 * Reviewing documentation
 
 The implementation and evidence in this repository represent **my own lab work**.
+
+### Participant Repositories
+
+* [Hari Krishnan R K — Nmap & Wireshark Network Analysis](https://github.com/harikrishnan-rk/nmap-wireshark-network-analysis)
+* [Manu P Nair — Nmap & Wireshark Network Analysis](https://github.com/manunair16/nmap-wireshark-network-analysis)
+* [Varun M Nair — Nmap & Wireshark Network Analysis](https://github.com/varunmnair95/nmap-wireshark-network-analysis)
 
 ---
 
@@ -207,8 +186,8 @@ nmap-wireshark-network-analysis/
 │   ├── 02-port-scanning/
 │   └── 03-service-detection/
 │
-└── collaboration/
-    └── .gitkeep
+└── collaboration-comparison-and-network-analysis/
+    └── README.md
 ```
 
 ---
@@ -229,7 +208,7 @@ nmap-wireshark-network-analysis/
 
 # 📌 Project Status
 
-**Project 1 — Nmap & Wireshark Network Analysis**
+**Nmap & Wireshark Network Analysis - COMPLETED**
 
 The lab covers:
 
@@ -245,5 +224,4 @@ This project was performed in an isolated virtual lab using systems controlled b
 
 Nmap scanning and packet analysis should only be performed against systems where you have permission to test.
 
-This project is intended for **learning, practice, and portfolio development**.
-
+This project is intended for learning, practice, and portfolio development.
